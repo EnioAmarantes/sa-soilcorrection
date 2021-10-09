@@ -1,9 +1,12 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.soil;
+
+import edu.utfpr.cp.dacom.sa.soilcorrection.nutrients.NutrientesCTC;
 
 public enum TexturaSolo {
-    
+
     ARGILOSO {
-        public NutrientesCTC calculaValorIdeal() {
+        @Override
+		public NutrientesCTC calculaValorIdeal() {
             return NutrientesCTC
                     .builder()
                     .fosforo(9.0)
@@ -17,7 +20,8 @@ public enum TexturaSolo {
         }
     },
     TEXTURA_MEDIA{
-        public NutrientesCTC calculaValorIdeal() {
+        @Override
+		public NutrientesCTC calculaValorIdeal() {
             return NutrientesCTC
                     .builder()
                     .fosforo(12.0)
@@ -31,6 +35,6 @@ public enum TexturaSolo {
 
         }
     };
-    
+
     public abstract NutrientesCTC calculaValorIdeal();
 }

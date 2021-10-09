@@ -1,6 +1,11 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 import org.junit.jupiter.api.Test;
+
+import edu.utfpr.cp.dacom.sa.soilcorrection.corrections.EquilibrioCorrecaoCTC;
+import edu.utfpr.cp.dacom.sa.soilcorrection.nutrients.NutrientesCTC;
+import edu.utfpr.cp.dacom.sa.soilcorrection.soil.TexturaSolo;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestaValoresIdeais {

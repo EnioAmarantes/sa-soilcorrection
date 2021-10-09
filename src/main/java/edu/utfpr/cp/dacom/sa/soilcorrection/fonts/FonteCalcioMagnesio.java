@@ -1,13 +1,16 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.fonts;
 
 import java.util.Set;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.nutrients.NomeNutrienteAdicional;
+import edu.utfpr.cp.dacom.sa.soilcorrection.nutrients.NutrienteAdicional;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+
 @RequiredArgsConstructor
 @Getter
-public enum FonteCalcioMagnesio 
+public enum FonteCalcioMagnesio
         implements IFonteNutriente {
 
     CALCARIO_DOLOMITICO(30.4, Set.of()),
